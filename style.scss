@@ -1,0 +1,54 @@
+body {
+  background-image: url("assets/img/music.jpg");
+  background-size: cover;
+  color: white;
+  font-weight: bold;
+}
+
+.title {
+  font-family: 'Germania One', cursive;
+  font-size: 3em;
+  letter-spacing: 5px;
+  margin-top: 120px;
+  text-align: center;
+}
+
+.keys {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  width: 70%;
+}
+
+.key {
+  align-items: center;
+  background: #000000ab;
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  justify-content: center;
+  margin-top: 340px;
+  transition: all 0.07s;
+  width: 100px;
+  @media screen and (max-width: 992px) {
+    margin-top: 240px;
+  }
+
+  &__letter {
+    font-size: 3em;
+  }
+
+  &__sound {
+    color: #ffc600;
+    font-family: Roboto;
+    font-size: 0.7em;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}
+
+.key--playing {
+  transform: scale(1.1);
+  border: 5px solid #ffc600;
+  box-shadow: 0 0 10px #ffc600;
+}
